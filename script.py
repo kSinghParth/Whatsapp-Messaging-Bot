@@ -15,7 +15,7 @@ driver.get('https://web.whatsapp.com')
 #time.sleep(20)
 input("Input when logged in")
 print("Starting search")
-inp_xpath_search = '//*[@id="side"]/div[1]/div/label/div/div[2]'
+inp_xpath_search = '///*[@id="site-content"]/div[4]/div/div/div'
 search=driver.find_element(by=By.XPATH, value=inp_xpath_search)
 time.sleep(3)
 search.click()
